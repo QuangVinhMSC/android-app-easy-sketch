@@ -12,6 +12,78 @@
         android:id="@+id/cameraView"
         android:layout_width="match_parent"
         android:layout_height="500dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="110dp" />
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="2dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="255"
+        android:progress="50" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="286dp"
+        android:onClick="change"
+        android:text="binary" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="168dp"
+        android:onClick="steps"
+        android:text="steps" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button5"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="169dp"
+        android:onClick="rssteps"
+        android:text="reset" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="42dp"
+        android:onClick="edges"
+        android:text="edges" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cameraView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="159dp"
+        android:onClick="reals"
+        android:text="real" />
 </RelativeLayout>
